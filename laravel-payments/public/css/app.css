@@ -7,3 +7,12 @@
   text-align: right;
 }
 
+.active {
+  background-color: purple;
+}
+
+a {
+  font-size: 20px;
+  border: 1px solid black;
+}
+
