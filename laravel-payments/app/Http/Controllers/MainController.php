@@ -76,6 +76,15 @@ class MainController extends Controller
             ['id' => '29', 'status' => 'rejected', 'price' => '88.00', 'prenotazione_id' => '29', 'pagante_id' => '21', 'created_at' => '2018-05-28 13:53:45', 'updated_at' => '2018-05-28 13:53:45'],
             ['id' => '30', 'status' => 'pending', 'price' => '991.00', 'prenotazione_id' => '30', 'pagante_id' => '21', 'created_at' => '2018-05-28 13:53:45', 'updated_at' => '2018-05-28 13:53:45'],
         ];
-        return view('pages.pending', compact('pagamenti'));
+
+        $pending = [];
+
+        foreach ($pagamenti as $key => $pagamento) {
+            if ($pagamento['status'] === 'pending') {
+                $pending[] = $pagamento;
+            }
+        }
+        $pagamenti = $pending;
+        return view('pages.pagamenti', compact('pagamenti'));
     }
 }
