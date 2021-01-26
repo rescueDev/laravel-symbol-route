@@ -1,0 +1,7 @@
+.about {
+    padding: 20px;
+    width: 100%;
+    @include flex-center-all;
+    min-height: 500px;
+    background-color: tomato;
+}

@@ -1,0 +1,7 @@
+.home {
+    background-color: springgreen;
+    width: 100%;
+    @include flex-center-all;
+    padding: 20px;
+    min-height: 500px;
+}

@@ -1,0 +1,14 @@
+@import "Partials/common";
+@import "Partials/header";
+@import "Partials/links";
+@import "Partials/footer";
+@import "Partials/home";
+@import "Partials/blog";
+@import "Partials/about";
+
+body {
+    height: 100vh;
+    a {
+        color: blue;
+    }
+}

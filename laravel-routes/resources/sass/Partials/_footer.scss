@@ -1,0 +1,7 @@
+footer {
+    @include flex-center-all;
+    width: 100%;
+    background-color: slategray;
+    min-height: calc(100vh - 80px - 500px);
+    color: black;
+}
